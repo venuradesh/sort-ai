@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 function Login() {
+  const onLoginClick = (e) => {
+    e.preventDefault();
+    document.location.href = "/";
+  };
+
   return (
     <Container>
       <div className="background"></div>
@@ -20,7 +25,7 @@ function Login() {
         </div>
         <div className="forget-password">Forget Password</div>
         <div className="btn-container">
-          <input type="submit" value="Login" id="login-btn" />
+          <input type="submit" value="Login" id="login-btn" onClick={(e) => onLoginClick(e)} />
           <div className="separator"></div>
           <a href="/signup">Create an account</a>
         </div>
@@ -134,64 +139,63 @@ const BoxContainer = styled.div`
   .forget-password {
     font-size: var(--font-size-s);
     font-weight: 600;
-    margin-top 10px;
-    cursor:pointer;
+    margin-top: 10px;
+    cursor: pointer;
     margin-bottom: 10px;
 
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
 
-  .btn-container{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap: 10px;
     flex: 1;
     width: 100%;
 
-    input{
+    input {
       flex: 1;
       width: 100%;
       padding: 20px 20px;
-      outline:none;
-      border:none;
+      outline: none;
+      border: none;
       border-radius: var(--border-radius-s);
       background-color: var(--blue);
       color: var(--white);
       font-size: var(--font-size-n);
-      cursor:pointer;
+      cursor: pointer;
       font-weight: 600;
-      transition:all 0.3s ease;
+      transition: all 0.3s ease;
 
-      &:hover{
+      &:hover {
         background-color: var(--blue-hover);
       }
     }
 
-    .separator{
+    .separator {
       width: 90%;
       height: 1px;
       background-color: var(--black);
       margin: 5px 0px;
     }
 
-    a{
+    a {
       width: 100%;
       background-color: var(--green);
       padding: 20px 20px;
       border-radius: var(--border-radius-s);
-      text-align:center;
+      text-align: center;
       color: var(--white);
       font-weight: 600;
-      transition:all 0.3s ease;
+      transition: all 0.3s ease;
 
-      &:hover{
+      &:hover {
         background-color: var(--green-hover);
       }
     }
   }
-  
 `;

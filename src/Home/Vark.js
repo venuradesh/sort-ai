@@ -25,7 +25,7 @@ function Vark() {
         </div>
       </IconContainer>
       <ButtonContainer>
-        <button>Jump to VARK assesment</button>
+        <button onClick={() => (document.location.href = "/vassesment")}>Jump to VARK assesment</button>
       </ButtonContainer>
       <InfoContainer>
         <div className="title">What is VARK? </div>

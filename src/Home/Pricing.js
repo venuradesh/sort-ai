@@ -29,11 +29,12 @@ const ItemContainer = styled.div`
   width: 100vw;
   height: calc(100vh - 70px);
   padding: 50px;
+  background-color: var(--background-gray);
 
   .title {
     font-size: var(--font-size-l);
     font-weight: 700;
-    color: var(--dark-gray);
+    color: var(--white);
   }
 `;
 

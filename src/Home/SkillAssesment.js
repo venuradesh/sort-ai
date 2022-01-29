@@ -21,7 +21,7 @@ function SkillAssesment() {
         </div>
       </IconContainer>
       <ButtonContainer>
-        <button>Jump to Skill assesment</button>
+        <button onClick={() => (document.location.href = "/assesment")}>Jump to Skill assesment</button>
       </ButtonContainer>
       <InfoContainer>
         <div className="title">What is Skill Assesment? </div>
