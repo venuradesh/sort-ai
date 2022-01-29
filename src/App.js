@@ -5,6 +5,7 @@ import Login from "./LoginSection/Login";
 import Home from "./Home/Home";
 import Vark from "./Home/Vark";
 import SkillAssesment from "./Home/SkillAssesment";
+import Pricing from "./Home/Pricing";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/varklearning" element={<Vark />} />
           <Route exact path="/skillassesment" element={<SkillAssesment />} />
+          <Route exact path="/pricing" element={<Pricing />} />
         </Routes>
       </div>
     </Router>
